@@ -3,7 +3,7 @@
 </h1>
 <!-- <fa-databinding></fa-databinding> -->
 <fa-lifecycle *ngIf="!delete" [bindable] = "boundValue">
-  <p>{{test}}</p>
+  <p #boundParent>{{test}}</p>
 </fa-lifecycle>
 <button (click)="delete = true">Click to Delete</button>
 <button (click)="test = 'Changed value'">Click to Change Content</button>
